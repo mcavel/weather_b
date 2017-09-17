@@ -4,7 +4,8 @@ import time
 import json
 import random
 import requests as req
-import datetime
+
+
 
 # Twitter API Keys
 consumer_key = "FzZ3zDr36XP0GAPLBLVS3m6QW"
@@ -21,7 +22,7 @@ def WeatherTweet():
 
     # Construct a Query URL for the OpenWeatherMap
     url = "http://api.openweathermap.org/data/2.5/weather?"
-    city = "San Francisco"
+    city = "london"
     units = "imperial"
     query_url = url + "appid=" + api_key + "&q=" + city + "&units=" + units
 
@@ -37,7 +38,7 @@ def WeatherTweet():
 
     # Tweet the weather
     api.update_status(
-        "San Francisco Weather as of %s: %s F" %
+        "London Weather as of %s: %s F" %
         (datetime.datetime.now().strftime("%I:%M %p"),
          weather_json["main"]["temp"]))
 
