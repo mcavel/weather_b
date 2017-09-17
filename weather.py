@@ -14,7 +14,7 @@ access_token = "808542776673583104-m6fHan4xPmQOaPDwP5e59p3ioEoFmXW"
 access_token_secret = "CdcMy49dc15SRSBqLrJeT6hsQFu56VOis5xKFSGyyMbmu"
 
 # Weather API
-api_key = "ed791b853161a5241e77846e1a84d4db
+api_key = "ed791b853161a5241e77846e1a84d4db"
 
 
 # Create a function that gets the weather in London and Tweets it
