@@ -22,7 +22,7 @@ def WeatherTweet():
 
     # Construct a Query URL for the OpenWeatherMap
     url = "http://api.openweathermap.org/data/2.5/weather?"
-    city = "london"
+    city = "san francisco"
     units = "imperial"
     query_url = url + "appid=" + api_key + "&q=" + city + "&units=" + units
 
@@ -38,7 +38,7 @@ def WeatherTweet():
 
     # Tweet the weather
     api.update_status(
-        "London Weather as of %s: %s F" %
+        "San Francisco Weather as of %s: %s F" %
         (datetime.datetime.now().strftime("%I:%M %p"),
          weather_json["main"]["temp"]))
 
